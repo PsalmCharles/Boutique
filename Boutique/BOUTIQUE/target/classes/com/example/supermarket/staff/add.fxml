@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Text?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="1080.0" style="-fx-background-color: DAEE01;" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.supermarket.Controller.StaffController">
+   <children>
+      <VBox alignment="TOP_CENTER" layoutX="240.0" layoutY="79.0" prefHeight="443.0" prefWidth="600.0" spacing="20.0" style="-fx-background-color: DAEE01;">
+         <children>
+            <Separator layoutX="307.0" layoutY="77.0" opacity="0.0" orientation="VERTICAL" prefHeight="20.0" />
+            <Text fill="#29a2ff" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-size: 3em;" text="Add Staff" />
+            <TextField fx:id="staff_id" maxWidth="-Infinity" prefWidth="200.0" promptText="Staff ID" />
+            <TextField fx:id="user_name" layoutX="210.0" layoutY="118.0" maxWidth="-Infinity" prefWidth="200.0" promptText="User Name" />
+            <PasswordField fx:id="password" maxWidth="-Infinity" prefWidth="200.0" promptText="Password" />
+            <PasswordField fx:id="re_password" layoutX="210.0" layoutY="341.0" maxWidth="-Infinity" prefWidth="200.0" promptText="Retype Password" />
+            <HBox alignment="CENTER" spacing="100.0">
+               <children>
+                  <Button mnemonicParsing="false" onAction="#cancel" prefWidth="70.0" style="-fx-background-color: red;" text="Cancel" textFill="WHITE" />
+                  <Button layoutX="10.0" layoutY="10.0" mnemonicParsing="false" onAction="#add" prefWidth="70.0" style="-fx-background-color: green;" text="Add" textFill="WHITE" />
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+   </children>
+</Pane>
